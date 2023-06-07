@@ -4,6 +4,6 @@
   become: true
   tasks:
     - name: update apt packages
-      apt:
+      yum:
         upgrade: yes
         update_cache: yes
