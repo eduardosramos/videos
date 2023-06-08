@@ -1,1 +1,10 @@
-
+---
+- hosts: dev-systems
+  remote_user: admin
+  become: yes
+  tasks:
+    - name: Update installed packages.
+      command: /usr/bin/yum update -y {{item}}
+      with_items:
+          - unzip
+          - nomad
