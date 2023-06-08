@@ -5,4 +5,5 @@
   tasks:
     - name: Update installed packages.
       command: /usr/bin/yum install -y {{item}}
+      with_items:
           - vault
