@@ -1,5 +1,5 @@
 ---
-- hosts: dev-systems
+- hosts: all
   remote_user: admin
   become: yes
   tasks:
