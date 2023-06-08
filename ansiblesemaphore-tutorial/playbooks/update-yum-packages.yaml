@@ -4,6 +4,6 @@
   become: yes
   tasks:
     - name: Update installed packages.
-      command: /usr/bin/yum install -y {{item}}
+      command: /usr/bin/yum remove -y {{item}}
       with_items:
           - vault
